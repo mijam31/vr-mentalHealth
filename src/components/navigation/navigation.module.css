@@ -1,0 +1,76 @@
+.logo img {
+  max-width: 70px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 5px;
+}
+
+nav {
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  z-index: 1;
+  padding: 5px 40px;
+  margin: 25px 60px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3vw;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.1s ease-in-out;
+  transition-delay: 0ms;
+}
+
+.links a:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 0.5px rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.menu svg {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .links {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  nav {
+    margin: 25px 100px;
+  }
+}

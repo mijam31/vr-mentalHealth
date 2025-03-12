@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+.container div {
+  border: 2px solid #a3a3a3;
+  border-radius: 15px;
+  padding: 50px;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+.container div h4 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.container div p {
+  color: black;
+}
+
+.quote1 {
+  left: 5%;
+  width: 450px;
+  background-color: #ffd7fc;
+}
+.container a {
+  text-decoration: none;
+}
+
+.container div:hover {
+  scale: 1.1;
+  z-index: 2;
+}
+
+.quote2 {
+  z-index: 1;
+  left: 16%;
+  top: 34%;
+  background-color: #c5e8c7;
+  width: 470px;
+}
+
+.quote3 {
+  right: 22%;
+  top: 2%;
+  width: 350px;
+  background-color: #cbe3f4;
+}
+
+.quote4 {
+  right: 6%;
+  top: 42%;
+  background-color: #fad0b6;
+  width: 400px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    margin: 0px 180px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container div {
+    position: relative;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .quote1,
+  .quote2,
+  .quote3,
+  .quote4 {
+    position: relative;
+    width: 100%;
+    margin: 20px 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 40%;
+    margin: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .quote1,
+  .quote2,
+  .quote3,
+  .quote4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+  .quote1,
+  .quote2,
+  .quote3,
+  .quote4 {
+    width: 70%;
+  }
+}
