@@ -49,6 +49,20 @@
   border-bottom: 2px solid #252525;
 }
 
+.filler ul li a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.intro .filler ul li:hover {
+  color: #5d7ad6;
+  border-bottom: 2px solid #5d7ad6;
+}
+
+.intro .filler ul li a:hover {
+  color: #5d7ad6;
+}
+
 .filler img {
   width: 300px;
   height: auto;
@@ -101,6 +115,11 @@
 
 .intro .filler ul li::marker {
   color: #477eb4;
+}
+
+.intro .filler img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ptsd section styles */

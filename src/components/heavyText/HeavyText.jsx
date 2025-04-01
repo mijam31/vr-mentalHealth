@@ -8,32 +8,24 @@ const HeavyText = () => {
           <div className={styles.introContent}>
             <div className={styles.filler}>
               <ul>
-                <h4>Hvordan VR kan styrke mental sundhed 🌿</h4>
+                <h4>Hvad vil du vide om VR og mental sundhed?</h4>
                 <li>
-                  <p>
-                    Sikker eksponering – Mød din frygt i et kontrolleret miljø
-                  </p>
+                  <a href="#PTSD">PTSD</a>
                 </li>
                 <li>
-                  <p>
-                    Interaktiv terapi – Træn sindet gennem realistiske
-                    simulationer
-                  </p>
+                  <a href="#socialAnxiety">Social angst og autisme</a>
                 </li>
                 <li>
-                  <p>
-                    Afstressende oplevelser – Virtuelle naturscener og
-                    meditation
-                  </p>
+                  <a href="#schizophrenia"> Skitzofreni</a>
                 </li>
                 <li>
-                  <p>
-                    Tilpasset behandling – Justér intensitet og tempo efter
-                    behov
-                  </p>
+                  <a href="#addiction">Afhængighed</a>
                 </li>
                 <li>
-                  <p>Mere tilgængelig hjælp – Modtag terapi hjemmefra</p>
+                  <a href="#cognitiveDifficulties">Kognitive vanskeligheder</a>
+                </li>
+                <li>
+                  <a href="#challenges">Udfordringer og begrænsninger</a>
                 </li>
               </ul>
               <img src="src/assets/therapy.avif" alt="" />
@@ -79,7 +71,7 @@ const HeavyText = () => {
           </div>
         </div>
 
-        <div className={styles.ptsd}>
+        <div className={styles.ptsd} id="PTSD">
           <div className={styles.text}>
             <h3>PTSD</h3>
             <p>
@@ -179,7 +171,7 @@ const HeavyText = () => {
           </ul>
         </div>
 
-        <div className={styles.socialAnxiety}>
+        <div className={styles.socialAnxiety} id="socialAnxiety">
           <div className={styles.filler}>
             <img src="src/assets/audience.avif" alt="" />
           </div>
@@ -225,7 +217,7 @@ const HeavyText = () => {
           </div>
         </div>
 
-        <div className={styles.schizophrenia}>
+        <div className={styles.schizophrenia} id="schizophrenia">
           <div className={styles.filler}>
             <p>
               🧠 Vidste du, at omkring 20 millioner mennesker på verdensplan
@@ -269,7 +261,7 @@ const HeavyText = () => {
           </div>
         </div>
 
-        <div className={styles.addiction}>
+        <div className={styles.addiction} id="addiction">
           <div className={styles.filler}>
             <p>
               🌀 Kan afhængighed omprogrammeres? Forskning tyder på, at VR kan
@@ -301,7 +293,10 @@ const HeavyText = () => {
           </div>
         </div>
 
-        <div className={styles.cognitiveDifficulties}>
+        <div
+          className={styles.cognitiveDifficulties}
+          id="cognitiveDifficulties"
+        >
           <div className={styles.filler}>
             <img src="/src/assets/kokkendel1.png" alt="" />
             <a
@@ -349,7 +344,7 @@ const HeavyText = () => {
           </div>
         </div>
 
-        <div className={styles.challenges}>
+        <div className={styles.challenges} id="challenges">
           <div className={styles.filler}>
             <p>
               ⚠️ Kan teknologi løse alt? Selvom VR-terapi er lovende, rejser det
