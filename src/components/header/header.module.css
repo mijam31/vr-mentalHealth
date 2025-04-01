@@ -57,7 +57,7 @@
   scale: 1.1;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1300px) {
   .header {
     height: 1000px;
   }
