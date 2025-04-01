@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
+import { bgg } from "/public/bgg.avif";
 
 const Header = ({ title1, title2, text, button }) => {
   return (

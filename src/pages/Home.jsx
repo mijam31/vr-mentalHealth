@@ -4,7 +4,6 @@ import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Navigation from "../components/navigation/Navigation";
 import Quotes from "../components/quotes/Quotes";
-import { bgg } from "/public/bgg.avif";
 
 const Home = () => {
   return (
