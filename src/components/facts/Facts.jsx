@@ -1,7 +1,7 @@
 import styles from "./facts.module.css";
 import { NavLink } from "react-router-dom";
 import React, { useEffect, useRef } from "react";
-import img from "src/assets/hands.avif";
+import img from "/public/hands.avif";
 
 const Facts = () => {
   const factsRef = useRef([]); // en ref til at holde referencer til facts elementer
