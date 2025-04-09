@@ -1,6 +1,7 @@
 import styles from "./facts.module.css";
 import { NavLink } from "react-router-dom";
 import React, { useEffect, useRef } from "react";
+import img from "src/assets/hands.avif";
 
 const Facts = () => {
   const factsRef = useRef([]); // en ref til at holde referencer til facts elementer
@@ -41,7 +42,7 @@ const Facts = () => {
   return (
     <>
       <section className={styles.facts}>
-        <img src="src/assets/hands.avif" alt="" />
+        <img src={img} alt="" />
         <div>
           <h3>Lidt omkring Fremtidens Terapi</h3>
           <div className={styles.content}>
