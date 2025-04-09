@@ -1,4 +1,14 @@
 import styles from "./HeavyText.module.css";
+import ptsdImg from "/public/war.avif";
+import introImg from "/public/therapy.avif";
+import ptsdBggImg from "/public/warbgg.avif";
+import factBggImg from "/public/fact.avif";
+import socialImg from "/public/audience.avif";
+import skitzoImg from "/public/skitzo.avif";
+import addictionImg from "/public/addiction.jpg";
+import kognitivImg1 from "/public/kokkendel1.jpg";
+import kognitivImg2 from "/public/kokkendel2.png";
+import challengesImg from "/public/challenges.avif";
 
 const HeavyText = () => {
   return (
@@ -28,7 +38,7 @@ const HeavyText = () => {
                   <a href="#challenges">Udfordringer og begrænsninger</a>
                 </li>
               </ul>
-              <img src="src/assets/therapy.avif" alt="" />
+              <img src={introImg} alt="" />
             </div>
             <div className={styles.text}>
               <h3>VR og mental sundhed</h3>
@@ -72,7 +82,10 @@ const HeavyText = () => {
         </div>
 
         <div className={styles.ptsd} id="PTSD">
-          <div className={styles.text}>
+          <div
+            className={styles.text}
+            style={{ backgroundImage: `url(${ptsdBggImg})` }}
+          >
             <h3>PTSD</h3>
             <p>
               Vidste du, at omkring 70 % af voksne har været udsat for mindst én
@@ -125,11 +138,14 @@ const HeavyText = () => {
                 </p>
               </li>
             </ul>
-            <img src="src/assets/war.avif" alt="" />
+            <img src={ptsdImg} alt="" />
           </div>
         </div>
 
-        <div className={styles.facts}>
+        <div
+          className={styles.facts}
+          style={{ backgroundImage: `url(${factBggImg})` }}
+        >
           <h5>🤔 Vidste du?</h5>
           <ul>
             <li>
@@ -173,7 +189,7 @@ const HeavyText = () => {
 
         <div className={styles.socialAnxiety} id="socialAnxiety">
           <div className={styles.filler}>
-            <img src="src/assets/audience.avif" alt="" />
+            <img src={socialImg} alt="" />
           </div>
 
           <div className={styles.text}>
@@ -230,7 +246,7 @@ const HeavyText = () => {
               Skizofreni rammer ca. 1 ud af 300 mennesker globalt – VR kan
               hjælpe dem med at tage kontrol over deres hallucinationer. 🧠✨
             </p>
-            <img src="src/assets/skitzo.avif" alt="" />
+            <img src={skitzoImg} alt="" />
           </div>
 
           <div className={styles.text}>
@@ -269,7 +285,7 @@ const HeavyText = () => {
               nye reaktionsmønstre i et sikkert miljø. Forestil dig at stå i en
               fristende situation – men denne gang er du forberedt. 🚀🧠
             </p>
-            <img src="/src/assets/addiction.jpg" alt="" />
+            <img src={addictionImg} alt="" />
           </div>
 
           <div className={styles.text}>
@@ -298,7 +314,7 @@ const HeavyText = () => {
           id="cognitiveDifficulties"
         >
           <div className={styles.filler}>
-            <img src="/src/assets/kokkendel1.png" alt="" />
+            <img src={kognitivImg1} alt="" />
             <a
               target="_blank "
               href="https://www.sciencedirect.com/science/article/pii/S0022395621007056?via%3Dihub"
@@ -306,7 +322,7 @@ const HeavyText = () => {
               Læs meget mere om studiet her!
             </a>
 
-            <img src="/src/assets/kokkendel2.png" alt="" />
+            <img src={kognitivImg2} alt="" />
           </div>
           <div className={styles.text}>
             <h3>Kognitive vanskeligheder</h3>
@@ -352,7 +368,7 @@ const HeavyText = () => {
               kontakt? Og hvad sker der, hvis den virtuelle virkelighed føles
               mere tryg end den ægte? 🤔🌍
             </p>
-            <img src="/src/assets/challenges.avif" alt="" />
+            <img src={challengesImg} alt="" />
           </div>
           <div className={styles.text}>
             <h3>Udfordringer, begrænsninger ved VR-terapi og fremtiden</h3>

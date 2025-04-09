@@ -1,6 +1,9 @@
 import styles from "./ExternalLinkCard.module.css";
 import { FaArrowRight } from "react-icons/fa";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+import virtualRealityImg from "/public/eksternlink1.jpg";
+import psykologiImg from "/public/psykologi.webp";
+import chatGbtImg from "/public/chatgbt.webp";
 
 const ExternalLinkCard = () => {
   return (
@@ -11,7 +14,7 @@ const ExternalLinkCard = () => {
         <div className={styles.container}>
           <FaAngleLeft className={styles.btn} />
           <div className={styles.link}>
-            <img src="src/assets/eksternlink1.jpg" alt="" />
+            <img src={virtualRealityImg} alt="" />
             <div className={styles.text}>
               <h4>Virtual Reality</h4>
               <p>
@@ -28,7 +31,7 @@ const ExternalLinkCard = () => {
             </div>
           </div>
           <div className={styles.link}>
-            <img src="src/assets/psykologi.webp" alt="" />
+            <img src={psykologiImg} alt="" />
             <div className={styles.text}>
               <h4>Psykologi</h4>
               <p>Se, mange forskellige artikler der omhandler psykologi.</p>
@@ -39,7 +42,7 @@ const ExternalLinkCard = () => {
             </div>
           </div>
           <div className={styles.link}>
-            <img src="src/assets/chatgbt.webp" alt="" />
+            <img src={chatGbtImg} alt="" />
             <div className={styles.text}>
               <h4>Fremtiden af chatgpt</h4>
               <p>
